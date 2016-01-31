@@ -55,6 +55,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+		   <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="buddies.html">Language Buddies</a></li>
+            <li><a href="audioforum.html">Audio Forum</a></li>
+            <li><a href="logout.html">Logout</a></li>
             
           </ul>
         </div><!--/.nav-collapse -->
@@ -77,15 +82,60 @@
       </div>
 	  
 	  <div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">Username</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+  <span class="input-group-addon" id="sizing-addon1">First Name</span>
+  <input type="text" class="form-control" placeholder="Jack" aria-describedby="sizing-addon1">
+</div><br>
+
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="sizing-addon1">Last Name</span>
+  <input type="text" class="form-control" placeholder="Sparrow" aria-describedby="sizing-addon1">
+    
 </div><br>
 <div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">Password</span>
-  <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+  <span class="input-group-addon" id="sizing-addon1">Display Name</span>
+  <input type="text" class="form-control" placeholder="Jacky" aria-describedby="sizing-addon1">
 </div><br>
-<button type="submit" class="btn btn-default"><a href="home.html">Login</a></button>
-<h3><span class="label label-default">New user? <a href="signup.html">Sign up</a></span></h3>
+<h3><span class="label label-default">Native Language</span></h3>
+		<select name="nativeLang">
+		<option value="English">English</option>
+		<option value="Spanish">Spanish</option>
+		<option value="French">French</option>
+		<option value="Russian">Russian</option>
+		<option value="German">German</option>
+		</select>
+		<br>
+<h3><span class="label label-default">Second Language</span></h3>
+		<select name="nativeLang">
+		<option value="English">English</option>
+		<option value="Spanish">Spanish</option>
+		<option value="French">French</option>
+		<option value="Russian">Russian</option>
+		<option value="German">German</option>
+		</select>
+		<br><br>
+
+		<h3><span class="label label-default">Major</span></h3>
+		
+		<select name="Major">	
+		<option value="bio2">Biology</option>
+		<option value="compSci2" selected>Computer Science</option>
+		<option value="nurse2" >Nurse</option>
+		<option value="none2">None</option>
+
+		</select>
+		<br><br>
+<h3><span class="label label-default">Minor</span></h3>
+		<select name="Minor1">	
+		<option value="bio2" selected>Biology</option>
+		<option value="compSci2">Computer Science</option>
+		<option value="nurse2" 	>Nurse</option>
+		<option value="none2">None</option>
+
+		</select>
+		<br><br>
+
+<button type="submit" class="btn btn-default"><a href="home.html">Update profile</a></button>
+
       
 	  
 	  

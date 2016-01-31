@@ -55,6 +55,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="buddies.html">Language Buddies</a></li>
+            <li><a href="audioforum.html">Audio Forum</a></li>
+            <li><a href="logout.html">Logout</a></li>
             
           </ul>
         </div><!--/.nav-collapse -->
@@ -67,6 +72,9 @@
       <div class="jumbotron">
         <img src="images/palit.png" width="200" height="200" class="img-thumbnail" alt="gangeshwari">
         <h1>Pal - It!</h1>
+        <p>Welcome to Pal - It! You have joined a growing network of pen-pals!. Stay connected with foreign language speakers around the world
+		and spread the word! Pal - It today!
+        </p>
         
 
       </div>
@@ -75,20 +83,64 @@
       <div class="page-header">
       
       </div>
-	  
-	  <div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">Username</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-</div><br>
-<div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">Password</span>
-  <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
-</div><br>
-<button type="submit" class="btn btn-default"><a href="home.html">Login</a></button>
-<h3><span class="label label-default">New user? <a href="signup.html">Sign up</a></span></h3>
+      <h1><span class="label label-success">French Speakers (Online)</span></h1><br><br>
+      <div class="col-sm-12">
+          <div class="list-group">
+            <a href="#" class="list-group-item"><b>Peter </b></a>
+			<a href="#" class="list-group-item"><b>Louise</b></a>
+			<a href="#" class="list-group-item"><b>Henal</b></a>
+			<a href="#" class="list-group-item"><b>Jacob </b></a>
+			
+            </div>
+			</div>
+		<h1><span class="label label-success">German Speakers (Online)</span></h1><br><br>
+      <div class="col-sm-12">
+          <div class="list-group">
+            <a href="#" class="list-group-item"><b>Monika </b></a>
+			<a href="#" class="list-group-item"><b>Gorden</b></a>
+			
+			
+            </div>
+			</div>
+			<h1><span class="label label-success">English Speakers (Online)</span></h1><br><br>
+      <div class="col-sm-12">
+          <div class="list-group">
+            <a href="#" class="list-group-item"><b>Amy </b></a>
+			<a href="#" class="list-group-item"><b>Michelle</b></a>
+			<a href="#" class="list-group-item"><b>Jackie</b></a>
+			<a href="#" class="list-group-item"><b>Andy </b></a>
+			<a href="#" class="list-group-item"><b>Brie</b></a>
+			
+            </div>
+			</div>
+		<h1><span class="label label-success">Spanish Speakers (Online)</span></h1><br><br>
+      <div class="col-sm-12">
+          <div class="list-group">
+            <a href="#" class="list-group-item"><b>Alicia</b></a>
+			<a href="#" class="list-group-item"><b>Natasha</b></a>
+			<a href="#" class="list-group-item"><b>Dre</b></a>
+			<a href="#" class="list-group-item"><b>Michael </b></a>
+			<a href="#" class="list-group-item"><b>Lewis</b></a>
+			
+            </div>
+			</div>
+			</div>
+		
+			
+			
+			
+          
       
-	  
-	  
+        
+    <div id="chatbox">
+    <ul id="messages"></ul>
+    <span id="notifyUser"></span>
+    <form id="form" action="" onsubmit="return submitfunction();" >
+      <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." /><input type="submit" id="button" value="Send"/>
+    </form>
+	</div>
+  
+      
 
 
 

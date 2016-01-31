@@ -9,6 +9,7 @@ app.get('/', function(req, res){
   app.use(express.static(path.join(__dirname)));
   res.sendFile(path.join(__dirname, '../chat2', 'index.html'));
 });
+
  
 // Register events on socket connection
 io.on('connection', function(socket){

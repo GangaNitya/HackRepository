@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Pal-It</title>
+    <title>Audio Forum</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -55,6 +55,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="../profile.html">My Profile</a></li>
+            <li><a href="buddies.html">Language Buddies</a></li>
+            <li><a href="audioforum.html">Audio Forum</a></li>
+            <li><a href="logout.html">Logout</a></li>
             
           </ul>
         </div><!--/.nav-collapse -->
@@ -66,7 +71,8 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <img src="images/palit.png" width="200" height="200" class="img-thumbnail" alt="gangeshwari">
-        <h1>Pal - It!</h1>
+        <h1>French Forum</h1>
+        
         
 
       </div>
@@ -75,21 +81,19 @@
       <div class="page-header">
       
       </div>
+	  <h2><span class="label label-primary">Contribute audio!</span></h2>
+	  <br>
+	  <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          
+        </div>
+        <input type="file" id="profilepic" name="profilepic" />
+		<button type="submit" class="btn btn-default">Upload file</button>
+		
+		
+	  </form>
 	  
-	  <div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">Username</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-</div><br>
-<div class="input-group input-group-lg">
-  <span class="input-group-addon" id="sizing-addon1">Password</span>
-  <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
-</div><br>
-<button type="submit" class="btn btn-default"><a href="home.html">Login</a></button>
-<h3><span class="label label-default">New user? <a href="signup.html">Sign up</a></span></h3>
-      
-	  
-	  
-
+		
 
 
     <!-- Bootstrap core JavaScript
@@ -103,3 +107,58 @@
     <script src="ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!--<html>
+  <body>
+    <audio controls autoplay></audio>
+    <script type="text/javascript" src="recorder.js"> </script>
+
+    <input onclick="startRecording()" type="button" value="start recording" />
+    <input onclick="stopRecording()" type="button" value="stop recording and play" />
+
+    <script>
+      var onFail = function(e) {
+        console.log('Rejected!', e);
+      };
+
+      var onSuccess = function(s) {
+        var context = new webkitAudioContext();
+        var mediaStreamSource = context.createMediaStreamSource(s);
+        recorder = new Recorder(mediaStreamSource);
+        recorder.record();
+
+        // audio loopback
+        // mediaStreamSource.connect(context.destination);
+      }
+
+      window.URL = window.URL || window.webkitURL;
+      navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+      var recorder;
+      var audio = document.querySelector('audio');
+
+      function startRecording() {
+        if (navigator.getUserMedia) {
+          navigator.getUserMedia({audio: true}, onSuccess, onFail);
+        } else {
+          console.log('navigator.getUserMedia not present');
+        }
+      }
+
+      function stopRecording() {
+        recorder.stop();
+        recorder.exportWAV(function(s) {
+          audio.src = window.URL.createObjectURL(s);
+        });
+      }
+    </script>
+  </body>
+</html>-->
